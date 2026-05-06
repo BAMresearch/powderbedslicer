@@ -1,0 +1,11 @@
+name: bam-slicer
+channels:
+  - conda-forge
+dependencies:
+  - python >= 3.10
+  - numpy
+  - matplotlib
+  - pyyaml
+  - jupyterlab
+  - ipykernel
+  - trimesh
