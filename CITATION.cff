@@ -1,0 +1,21 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: powderbedslicer
+message: Please cite this software using these metadata.
+type: software
+authors:
+  - given-names: Christoph
+    family-names: Wolf
+    orcid: 'https://orcid.org/0000-0002-0832-8073'
+  - given-names: Annika
+    family-names: Robens-Radermacher
+    orcid: 'https://orcid.org/0000-0001-9653-6085'
+  - given-names: Jörg F.
+    family-names: Unger
+    orcid: 'https://orcid.org/0000-0003-0035-0951'
+repository-code: 'https://github.com/BAMresearch/powderbedslicer'
+abstract: >-
+  This software creates printing instructions for the concrete powder bed printer at BAM.
+license: MIT
