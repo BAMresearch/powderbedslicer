@@ -55,7 +55,7 @@ ManualSpeedZ: 10                      # [mm/s]      manual jog z
 LinesNum: 176                         # [-]         print lines per layer (max y-resolution)
 LayerNumMax: 351                      # [-]         maximum layer count
 DeltaExtraPlaneEnd: 10                # [mm]        extra offset at end of layer cycle, small box: 10, large box: 0
-DeltaExtraPlaneStart: 0               # [mm]        extra offset at start of layer cycle, small box: 0, large box: 300
+DeltaExtraPlaneStart: 0               # [mm]        extra offset at start of layer cycle, small box: 0, large box: 320
 VoxelRaiseBeforeLaying: 40            # [%]         platform raise before recoater pass
 VoxelRaiseBeforePrinting: 60          # [%]         platform raise before printing pass
 RecoaterOpeningPositionLaying: 150    # [mm]        recoater slide open pos during laying
