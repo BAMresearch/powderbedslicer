@@ -1,0 +1,78 @@
+# ==============================================================
+# BAM Powder Bed Slicer -- Small box configuration
+# Box dimensions: 54 cm x 54 cm x 45 cm
+# ==============================================================
+# Edit the USER SETTINGS section for every new print job.
+# The PRINTER PARAMETERS section reflects the hardware of the
+# BAM powder bed printer (DESA1 - BAM) and should only be
+# changed when the physical printer setup changes.
+
+
+# --------------------------------------------------------------
+# USER SETTINGS  <-- edit these for every job
+# --------------------------------------------------------------
+
+# Unit factor: how many of your STL coordinate units equal 1 metre.
+#   mm     ->  1000
+#   cm     ->   100
+#   m      ->     1
+#   inches ->  39.3701
+stl_unit: 1000
+
+# Set to true to add human-readable layer separators and printer-
+# boundary markers in the .dsmn file for visual inspection.
+# IMPORTANT: always set to false for files sent to the printer!
+debug_mode: false
+
+# Extra blank (all-zero) layers added before and after the model
+# data in the .dsmn file. Helps the printer flush cleanly.
+add_zeros: 0
+
+# If true, centres the model within the printable sub-area.
+# If false, places it at the lower-left corner of that area.
+align_middle: true
+
+
+# --------------------------------------------------------------
+# PRINTER PARAMETERS  <-- BAM powder bed printer (DESA1 - BAM)
+# --------------------------------------------------------------
+
+PrinterName: "DESA1 - BAM"
+NozzleNum: 180                        # [-]         total nozzles across printhead
+NozzleOpen: 8                         # [-]         active nozzles
+PrinterX: 1.0032                      # [m]         bed dimension in x
+PrinterY: 1.026                       # [m]         bed dimension in y
+PrinterZ: 2.0007                      # [m]         max build height
+VoxelDimX: 0.0057                     # [m]         voxel size x (cubic: X=Y=Z)
+VoxelDimY: 0.0057                     # [m]         voxel size y
+VoxelDimZ: 0.0057                     # [m]         voxel size z (= layer height)
+PrintSpeedX: 50                       # [mm/s]      printhead speed during printing
+PrintSpeedY: 0                        # [mm/s]      (not used)
+PrintSpeedZ: 4                        # [mm/s]      build platform lowering speed
+LayingSpeedX: 50                      # [mm/s]      recoater spreading speed
+ManualSpeedX: 50                      # [mm/s]      manual jog x
+ManualSpeedY: 0                       # [mm/s]      manual jog y
+ManualSpeedZ: 10                      # [mm/s]      manual jog z
+LinesNum: 176                         # [-]         print lines per layer (max y-resolution)
+LayerNumMax: 351                      # [-]         maximum layer count
+DeltaExtraPlaneEnd: 10                # [mm]        extra offset at end of layer cycle
+DeltaExtraPlaneStart: 0               # [mm]        extra offset at start of layer cycle
+VoxelRaiseBeforeLaying: 40            # [%]         platform raise before recoater pass
+VoxelRaiseBeforePrinting: 60          # [%]         platform raise before printing pass
+RecoaterOpeningPositionLaying: 150    # [mm]        recoater slide open pos during laying
+RecoaterClosingPositionLaying: 300    # [mm]        recoater slide close pos during laying
+RecoaterOpeningPositionPrinting: 750  # [mm]        recoater slide open pos during printing
+RecoaterClosingPositionPrinting: 900  # [mm]        recoater slide close pos during printing
+RecoaterOpenCloseSpeed: 2             # [mm/s]      recoater slide actuation speed
+RecoaterHoleOpening: 19               # [mm]        recoater hole aperture width
+LumpBreakerPowder: 0                  # [-]         lump breaker (0=off)
+MinLiquid1LevelRange1To7: 2           # [-]         binder liquid 1 min level (scale 1-7)
+MaxLiquid1LevelRange1To7: 3           # [-]         binder liquid 1 max level
+MinLiquid2LevelRange1To7: 1           # [-]         binder liquid 2 min level
+MaxLiquid2LevelRange1To7: 3           # [-]         binder liquid 2 max level
+PrintLimitXMin: 41                    # [voxels]    lower x boundary of print area
+PrintLimitXMax: 136                   # [voxels]    upper x boundary of print area
+PrintLimitYMin: 95                    # [voxels]    lower y boundary of print area
+PrintLimitYMax: 175                   # [voxels]    upper y boundary of print area
+AddZerosPre: 0                        # [-]         blank layers prepended to model data
+AddZerosPost: 4                       # [-]         blank layers appended to model data
